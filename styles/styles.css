@@ -1,1 +1,157 @@
+/* ========================
+   GENEL SIFIRLAMA
+   ======================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #dcdcdc;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+/* Tüm sayfayı sarmalayan kutu */
+.wrapper {
+    width: 720px;
+}
+
+/* ========================
+   HEADER + NAV MENÜ
+   ======================== */
+header {
+    background-color: #f2f2f2;
+    border: 1px solid #bbb;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* hiyerarşik seçici: header h1 */
+header h1 {
+    font-size: 17px;
+    color: #222;
+}
+
+/* hiyerarşik seçici: nav ul */
+nav ul {
+    list-style: none;
+}
+
+/* hiyerarşik seçici: nav ul li */
+nav ul li {
+    display: inline-block;
+    margin-left: 4px;
+}
+
+/* hiyerarşik seçici: nav ul li a */
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 12px;
+    font-size: 13px;
+    border-radius: 3px;
+}
+
+/* linklere hover efekti */
+nav ul li a:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+/* aktif sayfa butonu */
+nav ul li a.active {
+    background-color: #4a8fd4;
+    color: #fff;
+}
+
+/* ========================
+   BANNER (açıklama alanı)
+   ======================== */
+.banner {
+    background-color: #fff;
+    border: 1px solid #bbb;
+    border-top: none;
+    padding: 14px 20px;
+}
+
+/* hiyerarşik seçici: .banner p */
+.banner p {
+    font-size: 13px;
+    color: #333;
+    line-height: 1.7;
+}
+
+/* ========================
+   İÇERİK ALANI (iki sütun)
+   ======================== */
+.content {
+    display: flex;
+    border: 1px solid #bbb;
+    border-top: none;
+}
+
+main {
+    width: 50%;
+    padding: 16px 20px;
+    border-right: 1px solid #bbb;
+    background-color: #eaf2fb;
+}
+
+aside {
+    width: 50%;
+    padding: 16px 20px;
+    background-color: #fdf8e1;
+}
+
+/* ========================
+   GRUP SEÇİCİ: her iki kutunun h2 başlıkları
+   ======================== */
+main h2, aside h2 {
+    font-size: 15px;
+    color: #b03a2e;
+    border-bottom: 2px solid #b03a2e;
+    padding-bottom: 6px;
+    margin-bottom: 10px;
+}
+
+/* ========================
+   GRUP SEÇİCİ: her iki kutunun paragrafları
+   ======================== */
+main p, aside p {
+    font-size: 13px;
+    line-height: 1.7;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+/* hiyerarşik seçici: sol kutudaki paragraflar */
+.content main p {
+    color: #2c3e50;
+}
+
+/* hiyerarşik seçici: sağ kutudaki paragraflar */
+.content aside p {
+    color: #4a4a4a;
+}
+
+/* ========================
+   FOOTER
+   ======================== */
+footer {
+    background-color: #f2f2f2;
+    border: 1px solid #bbb;
+    border-top: none;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 12px;
+    color: #888;
+}

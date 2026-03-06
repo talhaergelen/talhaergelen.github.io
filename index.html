@@ -2,55 +2,48 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>Ana Sayfa - Talha Ergelen</title>
+    <title>Talha Ergelen - Ana Sayfa</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Talha Ergelen</h1>
-        <p>Bilgisayar Mühendisliği Öğrencisi | Siber Güvenlik</p>
-    </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Ana Sayfa</a></li>
-            <li><a href="about.html">Hakkımda</a></li>
-            <li><a href="interests.html">İlgi Alanlarım</a></li>
-            <li><a href="contact.html">İletişim</a></li>
-        </ul>
-    </nav>
+    <div class="wrapper">
 
-    <main>
-        <h2>Hoş Geldiniz</h2>
-        <p>Bu web sitesi, kişisel portfolyomu ve projelerimi sergilemek amacıyla HTML etiketleri kullanılarak hazırlanmış <strong>statik bir tanıtım sayfasıdır</strong>.</p>
-        <p>Havacılık elektroniği ile başlayan serüvenimi ve yazılım dünyasındaki hedeflerimi öğrenmek için <a href="about.html"><em>Hakkımda</em></a> sayfasını ziyaret edebilirsiniz.</p>
+        <header>
+            <h1>Talha Ergelen</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Ana Sayfa</a></li>
+                    <li><a href="about.html">Hakkımda</a></li>
+                    <li><a href="interests.html">İlgi Alanlarım</a></li>
+                    <li><a href="contact.html">İletişim</a></li>
+                </ul>
+            </nav>
+        </header>
 
-        <h2>Hızlı Bilgiler</h2>
-        <ul>
-            <li>Üniversite: Teknoloji Fakültesi</li>
-            <li>Bölüm: Bilgisayar Mühendisliği</li>
-            <li>Odak Alanı: Siber Güvenlik, Ağ Mimarisi ve Linux</li>
-        </ul>
+        <div class="banner">
+            <p>Bilgisayar Mühendisliği öğrencisi ve siber güvenlik meraklısı. Bu site, kişisel portfolyomu ve projelerimi sergilemek amacıyla <strong>HTML5 + CSS3</strong> kullanılarak hazırlanmış statik bir tanıtım sayfasıdır. Havacılık elektroniği ile başlayan serüvenimi ve yazılım dünyasındaki hedeflerimi burada bulabilirsiniz.</p>
+        </div>
 
-        <h2 id="hedeflerim">Kariyer Hedeflerim</h2>
-        <ol>
-            <li>Alanında uzman bir siber güvenlikçi (Penetration Tester) olmak.</li>
-            <li>Savunma sanayiinde (Baykar, TUSAŞ vb.) kritik sistemlerin güvenliğini sağlamak.</li>
-            <li>Ağ mimarisi ve bulut mühendisliği konularında derinleşmek.</li>
-            <li>Açık kaynak projelere katkıda bulunarak Python ve C dillerinde yetkinleşmek.</li>
-        </ol>
+        <div class="content">
+            <main>
+                <h2>Hakkımda</h2>
+                <p>Teknoloji Fakültesi <strong>Bilgisayar Mühendisliği</strong> bölümünde okuyorum. Lisede uçak elektroniği alanında eğitim aldım ve TUSAŞ'ın Ankara ile Almanya yerleşkelerinde staj yaptım.</p>
+                <p>Şu anda siber güvenlik, ağ mimarisi ve Linux konularında kendimi geliştirmeye odaklanıyorum. Python ve C dilleriyle çeşitli projeler üzerinde çalışıyorum.</p>
+            </main>
 
-        <h2>Faydalı Bağlantılar</h2>
-        <p>Çalışmalarımda sıkça başvurduğum bazı kaynaklar:</p>
-        <ul>
-            <li><a href="https://github.com/talhaergelen" target="_blank">Kendi GitHub Profilim</a></li>
-            <li><a href="https://www.kali.org/" target="_blank">Kali Linux Docs</a></li>
-            <li><a href="https://tryhackme.com/" target="_blank">TryHackMe</a></li>
-        </ul>
-    </main>
+            <aside>
+                <h2>Kariyer Hedeflerim</h2>
+                <p>Alanında uzman bir siber güvenlikçi (Penetration Tester) olmayı ve savunma sanayiinde kritik sistemlerin güvenliğini sağlamayı hedefliyorum.</p>
+                <p>Ağ mimarisi ve bulut mühendisliği konularında derinleşerek açık kaynak projelere katkıda bulunmak istiyorum.</p>
+            </aside>
+        </div>
 
-    <footer>
-        <hr>
-        <p>&copy; 2026 Talha Ergelen | Web Programlama Dersi Laboratuvar Uygulaması</p>
-    </footer>
+        <footer>
+            <p>&copy; 2026 Talha Ergelen | Web Programlama Dersi Laboratuvar Uygulaması</p>
+        </footer>
+
+    </div>
+
 </body>
 </html>
