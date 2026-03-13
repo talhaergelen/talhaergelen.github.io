@@ -112,7 +112,8 @@ aside {
 /* ========================
    GRUP SEÇİCİ: her iki kutunun h2 başlıkları
    ======================== */
-main h2, aside h2 {
+main h2,
+aside h2 {
     font-size: 15px;
     color: #b03a2e;
     border-bottom: 2px solid #b03a2e;
@@ -123,7 +124,8 @@ main h2, aside h2 {
 /* ========================
    GRUP SEÇİCİ: her iki kutunun paragrafları
    ======================== */
-main p, aside p {
+main p,
+aside p {
     font-size: 13px;
     line-height: 1.7;
     text-align: left;
@@ -154,4 +156,113 @@ footer {
 footer p {
     font-size: 12px;
     color: #888;
+}
+
+/* ========================
+   İLETİŞİM FORMU
+   ======================== */
+
+/* .contact-container: genişlik + ortalama + kenarlık + köşe yuvarlaması */
+.contact-container {
+    width: 600px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #fff;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+}
+
+.contact-container h2 {
+    text-align: center;
+    font-size: 20px;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+/* form içindeki label'lar */
+.contact-container label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+/* ÇOKLU SEÇİCİ: tüm form elemanlarını tek seferde stillendir */
+.contact-container input[type="text"],
+.contact-container input[type="email"],
+.contact-container input[type="password"],
+.contact-container select,
+.contact-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+/* radio ve checkbox grupları */
+.radio-group,
+.checkbox-group {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+}
+
+.radio-group label,
+.checkbox-group label {
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: inline;
+}
+
+/* dosya yükleme */
+.contact-container input[type="file"] {
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+/* buton grubu */
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Gönder butonu */
+.btn-gonder {
+    flex: 1;
+    padding: 12px;
+    background-color: #2980b9;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-gonder:hover {
+    background-color: #1f6da0;
+}
+
+/* Temizle butonu */
+.btn-temizle {
+    flex: 1;
+    padding: 12px;
+    background-color: #c0392b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-temizle:hover {
+    background-color: #a5311f;
 }

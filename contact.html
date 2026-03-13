@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <title>İletişim - Talha Ergelen</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
+
 <body>
 
     <div class="wrapper">
@@ -22,21 +24,93 @@
         </header>
 
         <div class="banner">
-            <p>Benimle iletişime geçebileceğiniz bilgiler. Proje iş birlikleri ve siber güvenlik konularında her zaman iletişime açığım.</p>
+            <p>Benimle iletişime geçebileceğiniz bilgiler. Proje iş birlikleri ve siber güvenlik konularında her zaman
+                iletişime açığım.</p>
         </div>
 
         <div class="content">
             <main>
                 <h2>İletişim Bilgilerim</h2>
-                <p>E-posta: <a href="mailto:talhaergelen@gmail.com">talhaergelen@gmail.com</a> adresinden bana ulaşabilirsiniz. Genellikle 24 saat içinde dönüş yapıyorum.</p>
-                <p>Sosyal medya ve platformlarım: <a href="https://github.com/talhaergelen" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/talha-ergelen-2027a4295/" target="_blank">LinkedIn</a> | <a href="https://tryhackme.com/" target="_blank">TryHackMe</a></p>
+                <p>E-posta: <a href="mailto:talhaergelen@gmail.com">talhaergelen@gmail.com</a> adresinden bana
+                    ulaşabilirsiniz. Genellikle 24 saat içinde dönüş yapıyorum.</p>
+                <p>Sosyal medya ve platformlarım: <a href="https://github.com/talhaergelen" target="_blank">GitHub</a> |
+                    <a href="https://www.linkedin.com/in/talha-ergelen-2027a4295/" target="_blank">LinkedIn</a> | <a
+                        href="https://tryhackme.com/" target="_blank">TryHackMe</a></p>
             </main>
 
             <aside>
                 <h2>Sık Sorulan Sorular</h2>
-                <p><strong>Mesajlara ne kadar sürede dönüş yapıyorsunuz?</strong> Genellikle 24 saat içinde e-posta yoluyla dönüş yapıyorum.</p>
-                <p><strong>Projelerde iş birliğine açık mısınız?</strong> Evet, özellikle siber güvenlik ve eğitim projelerinde iş birliklerine açığım.</p>
+                <p><strong>Mesajlara ne kadar sürede dönüş yapıyorsunuz?</strong> Genellikle 24 saat içinde e-posta
+                    yoluyla dönüş yapıyorum.</p>
+                <p><strong>Projelerde iş birliğine açık mısınız?</strong> Evet, özellikle siber güvenlik ve eğitim
+                    projelerinde iş birliklerine açığım.</p>
             </aside>
+        </div>
+
+        <!-- ========== İLETİŞİM FORMU ========== -->
+        <div class="contact-container">
+            <h2>Detaylı İletişim Formu</h2>
+
+            <form>
+                <!-- Ad Soyad -->
+                <label for="adSoyad">Ad Soyad:</label>
+                <input type="text" id="adSoyad" name="adSoyad" placeholder="Örn: Talha Ergelen">
+
+                <!-- E-posta -->
+                <label for="eposta">E-posta Adresi:</label>
+                <input type="email" id="eposta" name="eposta" placeholder="ornek@mail.com">
+
+                <!-- Başvuru Takip Şifresi -->
+                <label for="sifre">Başvuru Takip Şifresi:</label>
+                <input type="password" id="sifre" name="sifre" placeholder="Şifrenizi girin">
+
+                <!-- İletişim Tercihi (radio) -->
+                <label>İletişim Tercihi:</label>
+                <div class="radio-group">
+                    <input type="radio" id="emailTercih" name="iletisimTercih" value="email" checked>
+                    <label for="emailTercih">Bana e-posta ile ulaşın</label>
+                    <br>
+                    <input type="radio" id="telTercih" name="iletisimTercih" value="telefon">
+                    <label for="telTercih">Bana telefonla ulaşın</label>
+                </div>
+
+                <!-- İlgi Alanları (checkbox) -->
+                <label>İlgi Alanları / Yetenekler:</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="htmlCheck" name="yetenekler" value="html">
+                    <label for="htmlCheck">HTML</label>
+                    <br>
+                    <input type="checkbox" id="cssCheck" name="yetenekler" value="css">
+                    <label for="cssCheck">CSS</label>
+                    <br>
+                    <input type="checkbox" id="algoCheck" name="yetenekler" value="algoritma">
+                    <label for="algoCheck">Algoritma</label>
+                </div>
+
+                <!-- Konu (select) -->
+                <label for="konu">Konu:</label>
+                <select id="konu" name="konu">
+                    <option value="" disabled selected>Lütfen bir konu seçin...</option>
+                    <option value="isTeklifi">İş Teklifi</option>
+                    <option value="soru">Soru</option>
+                    <option value="geriBildirim">Geri Bildirim</option>
+                </select>
+
+                <!-- Dosya Yükleme -->
+                <label for="dosya">Özgeçmiş (CV) veya Fotoğraf Yükle:</label>
+                <input type="file" id="dosya" name="dosya">
+
+                <!-- Mesaj (textarea) -->
+                <label for="mesaj">Mesajınız:</label>
+                <textarea id="mesaj" name="mesaj" rows="6"
+                    placeholder="Detaylı mesajınızı buraya yazabilirsiniz..."></textarea>
+
+                <!-- Butonlar -->
+                <div class="button-group">
+                    <button type="submit" class="btn-gonder">Gönder</button>
+                    <button type="reset" class="btn-temizle">Temizle</button>
+                </div>
+            </form>
         </div>
 
         <footer>
@@ -46,4 +120,5 @@
     </div>
 
 </body>
+
 </html>
