@@ -9,7 +9,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #dcdcdc;
+    background-color: #e8e4df;
     display: flex;
     justify-content: center;
     padding: 30px;
@@ -24,7 +24,7 @@ body {
    HEADER + NAV MENÜ
    ======================== */
 header {
-    background-color: #f2f2f2;
+    background-color: #2c3e50;
     border: 1px solid #bbb;
     padding: 12px 20px;
     display: flex;
@@ -35,7 +35,7 @@ header {
 /* hiyerarşik seçici: header h1 */
 header h1 {
     font-size: 17px;
-    color: #222;
+    color: #ecf0f1;
 }
 
 /* hiyerarşik seçici: nav ul */
@@ -52,7 +52,7 @@ nav ul li {
 /* hiyerarşik seçici: nav ul li a */
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #ecf0f1;
     padding: 5px 12px;
     font-size: 13px;
     border-radius: 3px;
@@ -60,13 +60,13 @@ nav ul li a {
 
 /* linklere hover efekti */
 nav ul li a:hover {
-    background-color: #ccc;
-    color: #000;
+    background-color: #1abc9c;
+    color: #fff;
 }
 
 /* aktif sayfa butonu */
 nav ul li a.active {
-    background-color: #4a8fd4;
+    background-color: #27ae60;
     color: #fff;
 }
 
@@ -100,13 +100,13 @@ main {
     width: 50%;
     padding: 16px 20px;
     border-right: 1px solid #bbb;
-    background-color: #eaf2fb;
+    background-color: #e8f8f5;
 }
 
 aside {
     width: 50%;
     padding: 16px 20px;
-    background-color: #fdf8e1;
+    background-color: #f4ecf7;
 }
 
 /* ========================
@@ -115,8 +115,8 @@ aside {
 main h2,
 aside h2 {
     font-size: 15px;
-    color: #b03a2e;
-    border-bottom: 2px solid #b03a2e;
+    color: #1a5276;
+    border-bottom: 2px solid #1a5276;
     padding-bottom: 6px;
     margin-bottom: 10px;
 }
@@ -134,20 +134,20 @@ aside p {
 
 /* hiyerarşik seçici: sol kutudaki paragraflar */
 .content main p {
-    color: #2c3e50;
+    color: #1b4f72;
 }
 
 /* hiyerarşik seçici: sağ kutudaki paragraflar */
 .content aside p {
-    color: #4a4a4a;
+    color: #5b2c6f;
 }
 
 /* ========================
    FOOTER
    ======================== */
 footer {
-    background-color: #f2f2f2;
-    border: 1px solid #bbb;
+    background-color: #2c3e50;
+    border: 1px solid #2c3e50;
     border-top: none;
     padding: 10px 20px;
     text-align: center;
@@ -155,7 +155,7 @@ footer {
 
 footer p {
     font-size: 12px;
-    color: #888;
+    color: #bdc3c7;
 }
 
 /* ========================
@@ -167,15 +167,15 @@ footer p {
     width: 600px;
     margin: 20px auto;
     padding: 30px;
-    background-color: #fff;
-    border: 1px solid #bbb;
+    background-color: #34495e;
+    border: 1px solid #2c3e50;
     border-radius: 8px;
 }
 
 .contact-container h2 {
     text-align: center;
     font-size: 20px;
-    color: #222;
+    color: #ecf0f1;
     margin-bottom: 20px;
 }
 
@@ -184,7 +184,7 @@ footer p {
     display: block;
     font-size: 14px;
     font-weight: bold;
-    color: #333;
+    color: #ecf0f1;
     margin-bottom: 5px;
     margin-top: 15px;
 }
@@ -198,17 +198,19 @@ footer p {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #5d6d7e;
     border-radius: 4px;
     font-size: 14px;
     font-family: Arial, sans-serif;
+    background-color: #2c3e50;
+    color: #ecf0f1;
 }
 
 /* radio ve checkbox grupları */
 .radio-group,
 .checkbox-group {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
+    background-color: #2c3e50;
+    border: 1px solid #5d6d7e;
     border-radius: 4px;
     padding: 10px 15px;
     margin-bottom: 10px;
@@ -220,12 +222,14 @@ footer p {
     margin-top: 0;
     margin-bottom: 0;
     display: inline;
+    color: #d5dbdb;
 }
 
 /* dosya yükleme */
 .contact-container input[type="file"] {
     margin-bottom: 10px;
     font-size: 13px;
+    color: #bdc3c7;
 }
 
 /* buton grubu */
@@ -239,7 +243,7 @@ footer p {
 .btn-gonder {
     flex: 1;
     padding: 12px;
-    background-color: #2980b9;
+    background-color: #27ae60;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -248,14 +252,14 @@ footer p {
 }
 
 .btn-gonder:hover {
-    background-color: #1f6da0;
+    background-color: #1e8449;
 }
 
 /* Temizle butonu */
 .btn-temizle {
     flex: 1;
     padding: 12px;
-    background-color: #c0392b;
+    background-color: #e67e22;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -264,5 +268,5 @@ footer p {
 }
 
 .btn-temizle:hover {
-    background-color: #a5311f;
+    background-color: #d35400;
 }
