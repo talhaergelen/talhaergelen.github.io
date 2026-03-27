@@ -19,7 +19,8 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    width: 900px;
+    max-width: 900px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -150,7 +151,7 @@ body {
    justify-content: center
    ======================== */
 .flex-cards {
-    height: 30vh;
+    min-height: 30vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
