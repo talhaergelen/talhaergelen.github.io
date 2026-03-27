@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox Lab - Talha Ergelen</title>
+    <link rel="stylesheet" href="styles/flexbox.css">
+</head>
+
+<body>
+
+    <!-- ===== ANA WRAPPER: 100vh, flex, column ===== -->
+    <div class="flex-wrapper">
+
+        <!-- ===== 1) NAVBAR: 10vh ===== -->
+        <nav class="flex-navbar">
+            <div class="logo">Talha Ergelen</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="about.html">Hakkımda</a></li>
+                <li><a href="interests.html">İlgi Alanlarım</a></li>
+                <li><a href="contact.html">İletişim</a></li>
+                <li><a href="flexbox.html" class="active">Flexbox Lab</a></li>
+            </ul>
+        </nav>
+
+        <!-- ===== 2) HERO: 30vh ===== -->
+        <section class="flex-hero">
+            <div class="hero-text">
+                <h1>Flexbox Lab Uygulaması</h1>
+                <p>Bu sayfa, CSS Flexbox özelliklerini uygulamalı olarak göstermek amacıyla hazırlanmıştır.
+                    Yatay/dikey hizalama, flex-grow, direction değişimi, stretch ve vh/vw boyutlandırma
+                    konularını içermektedir.</p>
+                <a href="#kartlar" class="hero-btn">Kartları Keşfet</a>
+            </div>
+            <div class="hero-image">
+                <div class="placeholder-box">
+                    📐 Görsel Alanı
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 3) KARTLAR: 30vh ===== -->
+        <section class="flex-cards" id="kartlar">
+            <div class="card">
+                <div class="card-icon">🌐</div>
+                <h3>HTML5</h3>
+                <p>Web sayfalarının iskelet yapısını oluşturur.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🎨</div>
+                <h3>CSS3</h3>
+                <p>Görsel tasarım ve stil düzenlemelerini sağlar.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">⚡</div>
+                <h3>JavaScript</h3>
+                <p>Sayfalara etkileşim ve dinamizm katar.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🔒</div>
+                <h3>Siber Güvenlik</h3>
+                <p>Sistem ve ağ güvenliği testleri yapar.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🐧</div>
+                <h3>Linux</h3>
+                <p>Açık kaynak işletim sistemi yönetimi.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🐍</div>
+                <h3>Python</h3>
+                <p>Otomasyon ve güvenlik scriptleri yazar.</p>
+            </div>
+        </section>
+
+        <!-- ===== 4) FLEX GROW: 20vh ===== -->
+        <section class="flex-grow-section">
+            <div class="grow-box grow-box-1">
+                <div class="grow-content">
+                    <span>Kutu 1</span>
+                    <span class="grow-label">flex-grow: 1</span>
+                </div>
+            </div>
+            <div class="grow-box grow-box-2">
+                <div class="grow-content">
+                    <span>Kutu 2</span>
+                    <span class="grow-label">flex-grow: 2</span>
+                </div>
+            </div>
+            <div class="grow-box grow-box-3">
+                <div class="grow-content">
+                    <span>Kutu 3</span>
+                    <span class="grow-label">flex-grow: 1</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 5) FOOTER: 10vh ===== -->
+        <footer class="flex-footer">
+            <p>&copy; Talha Ergelen 171423013 | Flexbox Lab Uygulaması</p>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

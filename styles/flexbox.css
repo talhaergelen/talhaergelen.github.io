@@ -1,0 +1,262 @@
+/* ========================
+   GENEL SIFIRLAMA
+   ======================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8e4df;
+}
+
+/* ========================
+   ANA WRAPPER — 100vh, flex column
+   ======================== */
+.flex-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    margin: 0 auto;
+}
+
+/* ========================
+   1) NAVBAR — 10vh
+   justify-content: space-between
+   align-items: center
+   ======================== */
+.flex-navbar {
+    height: 10vh;
+    background-color: #2c3e50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.flex-navbar .logo {
+    font-size: 17px;
+    font-weight: bold;
+    color: #ecf0f1;
+}
+
+.flex-navbar .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 5px;
+}
+
+.flex-navbar .nav-links a {
+    text-decoration: none;
+    color: #ecf0f1;
+    padding: 5px 12px;
+    font-size: 13px;
+    border-radius: 3px;
+}
+
+.flex-navbar .nav-links a:hover {
+    background-color: #1abc9c;
+    color: #fff;
+}
+
+.flex-navbar .nav-links a.active {
+    background-color: #27ae60;
+    color: #fff;
+}
+
+/* ========================
+   2) HERO — 30vh
+   flex-direction: row
+   justify-content: space-between
+   align-items: stretch
+   ======================== */
+.flex-hero {
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    background-color: #fff;
+    border: 1px solid #bbb;
+    border-top: none;
+}
+
+.hero-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 25px;
+}
+
+.hero-text h1 {
+    font-size: 22px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.hero-text .hero-btn {
+    display: inline-block;
+    width: fit-content;
+    padding: 8px 18px;
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.hero-text .hero-btn:hover {
+    background-color: #1e8449;
+}
+
+.hero-image {
+    flex: 1;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid #bbb;
+}
+
+.hero-image .placeholder-box {
+    width: 180px;
+    height: 120px;
+    border: 2px dashed #aaa;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #888;
+}
+
+/* ========================
+   3) KARTLAR — 30vh
+   display: flex
+   flex-wrap: wrap
+   gap kullanımı
+   justify-content: center
+   ======================== */
+.flex-cards {
+    height: 30vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 20px;
+    background-color: #e8f8f5;
+    border: 1px solid #bbb;
+    border-top: none;
+}
+
+.card {
+    flex: 1 1 calc(33.333% - 24px);
+    min-width: 140px;
+    max-width: 200px;
+    background-color: #fff;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    padding: 12px;
+    text-align: center;
+}
+
+.card .card-icon {
+    font-size: 24px;
+    margin-bottom: 6px;
+}
+
+.card h3 {
+    font-size: 13px;
+    color: #2c3e50;
+    margin-bottom: 4px;
+}
+
+.card p {
+    font-size: 11px;
+    color: #666;
+    line-height: 1.4;
+}
+
+/* ========================
+   4) FLEX GROW — 20vh
+   3 kutu: flex-grow 1-2-1
+   align-items: stretch
+   ======================== */
+.flex-grow-section {
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    border: 1px solid #bbb;
+    border-top: none;
+}
+
+.grow-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.grow-box-1 {
+    flex-grow: 1;
+    background-color: #1abc9c;
+}
+
+.grow-box-2 {
+    flex-grow: 2;
+    background-color: #2980b9;
+    border-left: 1px solid #bbb;
+    border-right: 1px solid #bbb;
+}
+
+.grow-box-3 {
+    flex-grow: 1;
+    background-color: #8e44ad;
+}
+
+.grow-box .grow-label {
+    font-size: 12px;
+    opacity: 0.8;
+    margin-top: 4px;
+    font-weight: normal;
+}
+
+.grow-box .grow-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ========================
+   5) FOOTER — 10vh
+   justify-content: center
+   align-items: center
+   ======================== */
+.flex-footer {
+    height: 10vh;
+    background-color: #2c3e50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-footer p {
+    font-size: 12px;
+    color: #bdc3c7;
+}
