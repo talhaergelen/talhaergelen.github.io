@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Position Lab - Talha Ergelen</title>
+    <link rel="stylesheet" href="styles/lab-position.css">
+</head>
+
+<body>
+
+    <!-- ===== SABİT: Ana Sayfaya Dön butonu (position: fixed) ===== -->
+    <a href="index.html" class="fixed-home-btn">Ana Sayfaya Dön</a>
+
+    <!-- ===== SABİT: Yardımcı Menü (position: fixed) ===== -->
+    <div class="fixed-helper">Yardımcı Menü</div>
+
+    <!-- ===== KISA BAŞLIK ALANI ===== -->
+    <div class="page-header">
+        <h1>Kampüs Duyuru Panosu</h1>
+        <p>Üniversite etkinlikleri ve duyuruları</p>
+    </div>
+
+    <!-- ===== ANA DUYURU KARTI (position: relative kapsayıcı) ===== -->
+    <div class="card-container">
+
+        <div class="announcement-card">
+
+            <!-- Dekoratif daireler (üst üste biner → z-index) -->
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+
+            <!-- Kart içeriği -->
+            <h2 class="card-title">Teknoloji Topluluğu Etkinliği</h2>
+            <p class="card-desc">Bu örnek sayfada amaç; CSS position özelliklerini
+                kullanarak tek bir duyuru kartı üzerinde relative, absolute,
+                fixed, z-index, hover, cursor ve animasyon mantığını
+                birlikte göstermektir.</p>
+
+            <!-- ===== ABSOLUTE ÖĞE 1: Ücretsiz rozeti (sol üst) ===== -->
+            <span class="badge badge-free">Ücretsiz</span>
+
+            <!-- ===== ABSOLUTE ÖĞE 2: Tarih etiketi (sağ üst) ===== -->
+            <span class="badge badge-date">24 Nisan</span>
+
+            <!-- ===== ABSOLUTE ÖĞE 3: Konum bilgisi (orta sağ) ===== -->
+            <span class="badge badge-location">Konum: Konferans Salonu</span>
+
+            <!-- ===== ABSOLUTE ÖĞE 4: Son Kayıt (sağ alt) ===== -->
+            <span class="badge badge-deadline">Son Kayıt</span>
+
+        </div>
+
+    </div>
+
+    <!-- ===== BASİT FOOTER ===== -->
+    <footer class="page-footer">
+        <p>2026 - Talha Ergelen 171423013 | LAB Position Çalışması</p>
+    </footer>
+
+</body>
+
+</html>
