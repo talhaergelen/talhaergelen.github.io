@@ -28,6 +28,7 @@ header {
     border: 1px solid #bbb;
     padding: 12px 20px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -38,15 +39,23 @@ header h1 {
     color: #ecf0f1;
 }
 
+/* nav tam genişliğe yayılsın, alt satıra geçsin */
+header nav {
+    width: 100%;
+    margin-top: 8px;
+}
+
 /* hiyerarşik seçici: nav ul */
 nav ul {
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
 }
 
 /* hiyerarşik seçici: nav ul li */
 nav ul li {
     display: inline-block;
-    margin-left: 4px;
 }
 
 /* hiyerarşik seçici: nav ul li a */

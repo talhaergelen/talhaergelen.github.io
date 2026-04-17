@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uygulamalar - Talha Ergelen</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/uygulamalar.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <header>
+            <h1>Talha Ergelen</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="about.html">Hakkımda</a></li>
+                    <li><a href="interests.html">İlgi Alanlarım</a></li>
+                    <li><a href="contact.html">İletişim</a></li>
+                    <li><a href="flexbox.html">Flexbox Lab</a></li>
+                    <li><a href="lab-position.html">Position Lab</a></li>
+                    <li><a href="uygulamalar.html" class="active">Uygulamalar</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- ========================
+             TAB MENÜSÜ
+             ======================== -->
+        <div class="tab-menu">
+            <button class="tab-btn active" id="tab1Btn" onclick="tabDegistir('uygulama1')">Uygulama 1 — Not Hesaplama</button>
+            <button class="tab-btn" id="tab2Btn" onclick="tabDegistir('uygulama2')">Uygulama 2 — Birim Dönüştürücü</button>
+        </div>
+
+        <!-- ========================
+             UYGULAMA-1: ÖĞRENCİ NOT HESAPLAMA
+             ======================== -->
+        <div class="tab-icerik active" id="uygulama1">
+
+            <div class="banner">
+                <p><strong>Uygulama-1:</strong> Kullanıcı form aracılığıyla Ad Soyad, Vize notu ve Final notunu girecek
+                    (input type text), ortalama hesaplayıp (vize %40, final %60) harf notuna çevirecek ve geçti kaldı
+                    yazacak (durum &gt;=50 ise geçti).</p>
+            </div>
+
+            <div class="app-container">
+                <h2>Öğrenci Not Hesaplama</h2>
+
+                <form id="notForm" onsubmit="return false;">
+                    <input type="text" id="adSoyad" placeholder="Ad Soyad" required>
+                    <input type="text" id="vizeNotu" placeholder="Vize Notu" required>
+                    <input type="text" id="finalNotu" placeholder="Final Notu" required>
+                    <button type="button" onclick="notHesapla()">Hesapla</button>
+                </form>
+
+                <div id="notSonuc" class="sonuc-alani" style="display: none;">
+                    <p class="sonuc-isim" id="sonucIsim"></p>
+                    <p id="sonucOrtalama"></p>
+                    <p id="sonucHarfNotu"></p>
+                    <p id="sonucDurum"></p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ========================
+             UYGULAMA-2: BİRİM DÖNÜŞTÜRÜCÜ
+             ======================== -->
+        <div class="tab-icerik" id="uygulama2">
+
+            <div class="banner">
+                <p><strong>Uygulama-2:</strong> Birim Dönüştürücü: Farklı mühendislik birimlerini (Sıcaklık:
+                    Celsius-Fahrenheit-Kelvin, Uzunluk: Metre-Kilometre-Mil, Ağırlık: Kilogram-Gram) birbirine
+                    dönüştüren uygulama.</p>
+            </div>
+
+            <div class="app-container converter-area">
+                <div class="converter-card">
+                    <h2>Birim Dönüştürücü</h2>
+
+                    <label for="deger">Değer Giriniz:</label>
+                    <input type="text" id="deger" placeholder="50">
+
+                    <label for="donusumTipi">Dönüşüm Tipi:</label>
+                    <select id="donusumTipi">
+                        <option value="celsius-fahrenheit">Celsius -&gt; Fahrenheit</option>
+                        <option value="fahrenheit-celsius">Fahrenheit -&gt; Celsius</option>
+                        <option value="celsius-kelvin">Celsius -&gt; Kelvin</option>
+                        <option value="metre-kilometre">Metre -&gt; Kilometre</option>
+                        <option value="kilometre-metre">Kilometre -&gt; Metre</option>
+                        <option value="kilometre-mil">Kilometre -&gt; Mil</option>
+                        <option value="mil-kilometre">Mil -&gt; Kilometre</option>
+                        <option value="kilogram-gram">Kilogram -&gt; Gram</option>
+                        <option value="gram-kilogram">Gram -&gt; Kilogram</option>
+                    </select>
+
+                    <button type="button" onclick="birimHesapla()">Hesapla</button>
+
+                    <div class="sonuc-kutusu" id="birimSonuc">
+                        Sonuç: —
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Talha Ergelen | Web Programlama Dersi Laboratuvar Uygulaması</p>
+        </footer>
+
+    </div>
+
+    <script src="scripts/uygulamalar.js"></script>
+
+</body>
+
+</html>
