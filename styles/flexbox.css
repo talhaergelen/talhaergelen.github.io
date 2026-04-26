@@ -47,7 +47,9 @@ body {
 .flex-navbar .nav-links {
     display: flex;
     list-style: none;
-    gap: 5px;
+    gap: 6px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
 .flex-navbar .nav-links a {

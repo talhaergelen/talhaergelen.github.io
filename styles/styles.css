@@ -17,16 +17,16 @@ body {
 
 /* Tüm sayfayı sarmalayan kutu */
 .wrapper {
-    width: 720px;
+    width: 900px;
 }
 
 /* ========================
    HEADER + NAV MENÜ
    ======================== */
 header {
-    background-color: #2c3e50;
-    border: 1px solid #bbb;
-    padding: 12px 20px;
+    background-color: #1a252f;
+    border: 1px solid #2c3e50;
+    padding: 14px 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -42,7 +42,7 @@ header h1 {
 /* nav tam genişliğe yayılsın, alt satıra geçsin */
 header nav {
     width: 100%;
-    margin-top: 8px;
+    margin-top: 10px;
 }
 
 /* hiyerarşik seçici: nav ul */
@@ -50,7 +50,8 @@ nav ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 4px;
+    gap: 6px;
+    justify-content: center;
 }
 
 /* hiyerarşik seçici: nav ul li */
@@ -61,10 +62,11 @@ nav ul li {
 /* hiyerarşik seçici: nav ul li a */
 nav ul li a {
     text-decoration: none;
-    color: #ecf0f1;
-    padding: 5px 12px;
-    font-size: 13px;
-    border-radius: 3px;
+    color: #bdc3c7;
+    padding: 6px 13px;
+    font-size: 12.5px;
+    border-radius: 4px;
+    transition: background-color 0.2s, color 0.2s;
 }
 
 /* linklere hover efekti */
