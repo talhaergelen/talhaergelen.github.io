@@ -1,0 +1,27 @@
+/* ================================================
+   Hafta 7 — Ek CSS (Sınırlı Düzeyde)
+   Ana görünüm Bootstrap üzerinden kurulmuştur.
+   Bu dosya yalnızca Bootstrap'ın kapsamadığı
+   çok küçük görsel ince ayarlar içindir.
+   ================================================ */
+
+
+/* Hero bölümü arka plan */
+.hero-section {
+    background-color: #f8f9fa;
+}
+
+/* Sonuç kutusu varsayılan arka planı (açık cyan tonu) */
+.sonuc-kutusu {
+    background-color: #e0f7fa;
+    border: 1px solid #b2ebf2;
+}
+
+/* Card bileşenlerine hover efekti */
+.card {
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
