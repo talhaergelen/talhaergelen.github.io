@@ -8,20 +8,83 @@
 
 /* Hero bölümü arka plan */
 .hero-section {
-    background-color: #f8f9fa;
+    background-color: #161b22;
 }
 
-/* Sonuç kutusu varsayılan arka planı (açık cyan tonu) */
+/* bg-light section'ları dark modda koyu yap */
+[data-bs-theme="dark"] .bg-light {
+    background-color: #161b22 !important;
+}
+
+/* Sonuç kutusu varsayılan arka planı */
 .sonuc-kutusu {
-    background-color: #e0f7fa;
-    border: 1px solid #b2ebf2;
+    background-color: rgba(0, 212, 255, 0.08);
+    border: 1px solid rgba(0, 212, 255, 0.2);
 }
 
 /* Card bileşenlerine hover efekti */
 .card {
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
     transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 212, 255, 0.1);
+}
+
+/* ================================================
+   FORM & METİN GÖRÜNÜRLÜKLERİ — Dark Mode
+   ================================================ */
+
+/* Tüm başlıklar parlak beyaz */
+h1, h2, h3, h4, h5, h6 {
+    color: #f1f5f9 !important;
+}
+
+/* Form label'ları parlak beyaz */
+.form-label {
+    color: #f1f5f9 !important;
+    font-weight: 500;
+}
+
+/* text-muted daha okunabilir */
+.text-muted {
+    color: #94a3b8 !important;
+}
+
+/* Form input/select yazı rengi beyaz */
+.form-control,
+.form-select {
+    color: #f1f5f9 !important;
+}
+
+/* Placeholder daha görünür */
+.form-control::placeholder {
+    color: #64748b !important;
+    opacity: 1;
+}
+
+/* Checkbox label */
+.form-check-label {
+    color: #cbd5e1 !important;
+}
+
+/* Card başlıkları */
+.card-title {
+    color: #f1f5f9 !important;
+}
+
+/* Card text */
+.card-text {
+    color: #94a3b8 !important;
+}
+
+/* Paragraflar ve span'lar */
+p, span, li {
+    color: #cbd5e1;
+}
+
+/* Badge renkleri korunsun */
+.badge {
+    color: revert;
 }

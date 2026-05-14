@@ -1,4 +1,31 @@
 /* ========================
+   GOOGLE FONTS
+   ======================== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* ========================
+   CSS DEĞİŞKENLERİ — Midnight Cyber Teması
+   ======================== */
+:root {
+    --bg-primary: #0f1117;
+    --bg-secondary: #161b22;
+    --bg-card: #1c2333;
+    --bg-card-alt: #1a1f2e;
+    --accent-cyan: #00d4ff;
+    --accent-purple: #a855f7;
+    --accent-green: #22c55e;
+    --accent-orange: #f59e0b;
+    --accent-red: #ef4444;
+    --text-primary: #e2e8f0;
+    --text-secondary: #94a3b8;
+    --text-muted: #64748b;
+    --border-color: rgba(255, 255, 255, 0.08);
+    --border-accent: rgba(0, 212, 255, 0.2);
+    --glow-cyan: 0 0 20px rgba(0, 212, 255, 0.15);
+    --glow-purple: 0 0 20px rgba(168, 85, 247, 0.15);
+}
+
+/* ========================
    GENEL SIFIRLAMA
    ======================== */
 * {
@@ -8,8 +35,8 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #e8e4df;
+    font-family: 'Inter', Arial, sans-serif;
+    background-color: var(--bg-primary);
     display: flex;
     justify-content: center;
     padding: 30px;
@@ -24,19 +51,22 @@ body {
    HEADER + NAV MENÜ
    ======================== */
 header {
-    background-color: #1a252f;
-    border: 1px solid #2c3e50;
+    background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-primary) 100%);
+    border: 1px solid var(--border-color);
     padding: 14px 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    border-radius: 12px 12px 0 0;
 }
 
 /* hiyerarşik seçici: header h1 */
 header h1 {
     font-size: 17px;
-    color: #ecf0f1;
+    color: var(--accent-cyan);
+    font-weight: 700;
+    letter-spacing: 0.5px;
 }
 
 /* nav tam genişliğe yayılsın, alt satıra geçsin */
@@ -62,31 +92,35 @@ nav ul li {
 /* hiyerarşik seçici: nav ul li a */
 nav ul li a {
     text-decoration: none;
-    color: #bdc3c7;
+    color: var(--text-secondary);
     padding: 6px 13px;
     font-size: 12.5px;
-    border-radius: 4px;
-    transition: background-color 0.2s, color 0.2s;
+    border-radius: 6px;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    font-weight: 500;
 }
 
 /* linklere hover efekti */
 nav ul li a:hover {
-    background-color: #1abc9c;
-    color: #fff;
+    background-color: rgba(0, 212, 255, 0.15);
+    color: var(--accent-cyan);
+    box-shadow: var(--glow-cyan);
 }
 
 /* aktif sayfa butonu */
 nav ul li a.active {
-    background-color: #27ae60;
-    color: #fff;
+    background-color: var(--accent-cyan);
+    color: var(--bg-primary);
+    font-weight: 600;
+    box-shadow: var(--glow-cyan);
 }
 
 /* ========================
    BANNER (açıklama alanı)
    ======================== */
 .banner {
-    background-color: #fff;
-    border: 1px solid #bbb;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
     border-top: none;
     padding: 14px 20px;
 }
@@ -94,7 +128,7 @@ nav ul li a.active {
 /* hiyerarşik seçici: .banner p */
 .banner p {
     font-size: 13px;
-    color: #333;
+    color: var(--text-secondary);
     line-height: 1.7;
 }
 
@@ -103,21 +137,21 @@ nav ul li a.active {
    ======================== */
 .content {
     display: flex;
-    border: 1px solid #bbb;
+    border: 1px solid var(--border-color);
     border-top: none;
 }
 
 main {
     width: 50%;
     padding: 16px 20px;
-    border-right: 1px solid #bbb;
-    background-color: #e8f8f5;
+    border-right: 1px solid var(--border-color);
+    background-color: var(--bg-secondary);
 }
 
 aside {
     width: 50%;
     padding: 16px 20px;
-    background-color: #f4ecf7;
+    background-color: var(--bg-card-alt);
 }
 
 /* ========================
@@ -126,10 +160,16 @@ aside {
 main h2,
 aside h2 {
     font-size: 15px;
-    color: #1a5276;
-    border-bottom: 2px solid #1a5276;
+    color: var(--accent-cyan);
+    border-bottom: 2px solid var(--accent-cyan);
     padding-bottom: 6px;
     margin-bottom: 10px;
+    font-weight: 600;
+}
+
+aside h2 {
+    color: var(--accent-purple);
+    border-bottom-color: var(--accent-purple);
 }
 
 /* ========================
@@ -145,28 +185,29 @@ aside p {
 
 /* hiyerarşik seçici: sol kutudaki paragraflar */
 .content main p {
-    color: #1b4f72;
+    color: #7dd3fc;
 }
 
 /* hiyerarşik seçici: sağ kutudaki paragraflar */
 .content aside p {
-    color: #5b2c6f;
+    color: #c4b5fd;
 }
 
 /* ========================
    FOOTER
    ======================== */
 footer {
-    background-color: #2c3e50;
-    border: 1px solid #2c3e50;
+    background-color: var(--bg-primary);
+    border: 1px solid var(--border-color);
     border-top: none;
     padding: 10px 20px;
     text-align: center;
+    border-radius: 0 0 12px 12px;
 }
 
 footer p {
     font-size: 12px;
-    color: #bdc3c7;
+    color: var(--text-muted);
 }
 
 /* ========================
@@ -178,24 +219,26 @@ footer p {
     width: 600px;
     margin: 20px auto;
     padding: 30px;
-    background-color: #34495e;
-    border: 1px solid #2c3e50;
-    border-radius: 8px;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-accent);
+    border-radius: 12px;
+    box-shadow: var(--glow-cyan);
 }
 
 .contact-container h2 {
     text-align: center;
     font-size: 20px;
-    color: #ecf0f1;
+    color: var(--accent-cyan);
     margin-bottom: 20px;
+    font-weight: 700;
 }
 
 /* form içindeki label'lar */
 .contact-container label {
     display: block;
     font-size: 14px;
-    font-weight: bold;
-    color: #ecf0f1;
+    font-weight: 600;
+    color: var(--text-primary);
     margin-bottom: 5px;
     margin-top: 15px;
 }
@@ -209,20 +252,31 @@ footer p {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #5d6d7e;
-    border-radius: 4px;
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    border-radius: 8px;
     font-size: 14px;
-    font-family: Arial, sans-serif;
-    background-color: #2c3e50;
-    color: #ecf0f1;
+    font-family: 'Inter', Arial, sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-container input[type="text"]:focus,
+.contact-container input[type="email"]:focus,
+.contact-container input[type="password"]:focus,
+.contact-container select:focus,
+.contact-container textarea:focus {
+    outline: none;
+    border-color: var(--accent-cyan);
+    box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.1);
 }
 
 /* radio ve checkbox grupları */
 .radio-group,
 .checkbox-group {
-    background-color: #2c3e50;
-    border: 1px solid #5d6d7e;
-    border-radius: 4px;
+    background-color: var(--bg-primary);
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    border-radius: 8px;
     padding: 10px 15px;
     margin-bottom: 10px;
 }
@@ -233,14 +287,14 @@ footer p {
     margin-top: 0;
     margin-bottom: 0;
     display: inline;
-    color: #d5dbdb;
+    color: var(--text-secondary);
 }
 
 /* dosya yükleme */
 .contact-container input[type="file"] {
     margin-bottom: 10px;
     font-size: 13px;
-    color: #bdc3c7;
+    color: var(--text-secondary);
 }
 
 /* buton grubu */
@@ -254,30 +308,38 @@ footer p {
 .btn-gonder {
     flex: 1;
     padding: 12px;
-    background-color: #27ae60;
-    color: #fff;
+    background: linear-gradient(135deg, var(--accent-cyan), #0099cc);
+    color: var(--bg-primary);
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     font-size: 16px;
+    font-weight: 600;
     cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.3s;
+    font-family: 'Inter', Arial, sans-serif;
 }
 
 .btn-gonder:hover {
-    background-color: #1e8449;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
 }
 
 /* Temizle butonu */
 .btn-temizle {
     flex: 1;
     padding: 12px;
-    background-color: #e67e22;
+    background: linear-gradient(135deg, var(--accent-purple), #7c3aed);
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     font-size: 16px;
+    font-weight: 600;
     cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.3s;
+    font-family: 'Inter', Arial, sans-serif;
 }
 
 .btn-temizle:hover {
-    background-color: #d35400;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(168, 85, 247, 0.3);
 }
